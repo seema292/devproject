@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://md-aqil.github.io/images/swiper.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- <link rel="stylesheet" href="banner.css" /> -->
+  </head>
+  <style>
+    /* .container {
+      max-width: 1320px;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+
+    @media (min-width: 1400px) {
+      .container,
+      .container-lg,
+      .container-md,
+      .container-sm,
+      .container-xl,
+      .container-xxl {
+        max-width: 1320px;
+      }
+    } */
+    /* Style the burger menu */
+    .burger {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 30px; /* Adjust the width as needed */
+      height: 20px; /* Adjust the height to accommodate 3 lines */
+      cursor: pointer;
+    }
+
+    /* Style each burger line */
+    .burger-line {
+      width: 100%;
+      height: 2px; /* Set the thickness of the burger lines */
+      background-color: #000; /* Set the color of the lines */
+      border-radius: 5px; /* Optional: Round the edges */
+    }
+
+    /* Initially hide the burger on large screens */
+    .burger {
+      display: none;
+    }
+
+    /* Show the burger only on small screens */
+    @media (max-width: 768px) {
+      .burger {
+        display: flex;
+      }
+    }
+    /* Initially hide the menu */
+    /* .menu {
+      display: none;
+    } */
+
+    /* Show the menu when the "active" class is added */
+    .menu.active {
+      display: block;
+    }
+  </style>
+  <body>
+    <main>
+      <!-- header -->
+      <div class="header-top-area bg-gradient-color d-lg-block">
+        <div class="container">
+          <div class="row">
+            <div
+              class="col-lg-6 header-top-left-part col-sm-12 d-flex justify-content-center"
+            >
+              <span>
+                <a href="tel:9911177045" class="text-white">
+                  <i class="fa-solid fa-phone"></i>
+                  9911177045
+                </a>
+              </span>
+            </div>
+            <div
+              class="col-lg-6 header-top-right-part text-end d-flex justify-content-center"
+            >
+              <span class="phone">
+                <a
+                  href="mailto:info@injoriatechnologies.com"
+                  class="text-white"
+                >
+                  <i class="fa-regular fa-envelope"></i>
+                  info@injoriatechnologies.com
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <nav>
+        <div class="wrapper">
+          <div class="logo"><a href="/satpu.html#">Logo</a></div>
+          <input type="radio" name="slider" id="menu-btn" />
+          <input type="radio" name="slider" id="close-btn" />
+          <ul class="nav-links">
+            <label for="close-btn" class="btn close-btn"
+              ><i class="fas fa-times"></i
+            ></label>
+            <li><a href="#">Home</a></li>
+            <!-- <li><a href="#">Services</a></li> -->
+
+            <li>
+              <a href="#" class="desktop-item"
+                >Services&nbsp;<i class="fa-solid fa-caret-down"></i
+              ></a>
+              <input type="checkbox" id="showDrop1" />
+              <label for="showDrop1" class="mobile-item"
+                >Services&nbsp;<i class="fa-solid fa-caret-down"></i
+              ></label>
+              <div class="mega-box drop-menu1">
+                <div class="content">
+                  <div class="row">
+                    <img
+                      src="https://fadzrinmadu.github.io/hosted-assets/responsive-mega-menu-and-dropdown-menu-using-only-html-and-css/img.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="row">
+                    <header>Design Services</header>
+                    <ul class="mega-links">
+                      <li><a href="#">Graphics</a></li>
+                      <li><a href="#">Vectors</a></li>
+                      <li><a href="#">Business cards</a></li>
+                      <li><a href="#">Custom logo</a></li>
+                    </ul>
+                  </div>
+                  <div class="row">
+                    <header>Email Services</header>
+                    <ul class="mega-links">
+                      <li><a href="#">Personal Email</a></li>
+                      <li><a href="#">Business Email</a></li>
+                      <li><a href="#">Mobile Email</a></li>
+                      <li><a href="#">Web Marketing</a></li>
+                    </ul>
+                  </div>
+                  <div class="row">
+                    <header>Security services</header>
+                    <ul class="mega-links">
+                      <li><a href="#">Site Seal</a></li>
+                      <li><a href="#">VPS Hosting</a></li>
+                      <li><a href="#">Privacy Seal</a></li>
+                      <li><a href="#">Website design</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <a href="#" class="desktop-item"
+                >Industries&nbsp;<i class="fa-solid fa-caret-down"></i
+              ></a>
+              <input type="checkbox" id="showDrop2" />
+              <label for="showDrop2" class="mobile-item"
+                >Industries&nbsp;<i class="fa-solid fa-caret-down"></i
+              ></label>
+              <div class="mega-box drop-menu2">
+                <div class="content">
+                  <div class="row">
+                    <img
+                      src="https://fadzrinmadu.github.io/hosted-assets/responsive-mega-menu-and-dropdown-menu-using-only-html-and-css/img.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="row">
+                    <header>Design Services</header>
+                    <ul class="mega-links">
+                      <li><a href="#">Graphics</a></li>
+                      <li><a href="#">Vectors</a></li>
+                      <li><a href="#">Business cards</a></li>
+                      <li><a href="#">Custom logo</a></li>
+                    </ul>
+                  </div>
+                  <div class="row">
+                    <header>Email Services</header>
+                    <ul class="mega-links">
+                      <li><a href="#">Personal Email</a></li>
+                      <li><a href="#">Business Email</a></li>
+                      <li><a href="#">Mobile Email</a></li>
+                      <li><a href="#">Web Marketing</a></li>
+                    </ul>
+                  </div>
+                  <div class="row">
+                    <header>Security services</header>
+                    <ul class="mega-links">
+                      <li><a href="#">Site Seal</a></li>
+                      <li><a href="#">VPS Hosting</a></li>
+                      <li><a href="#">Privacy Seal</a></li>
+                      <li><a href="#">Website design</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <a href="#" class="desktop-item"
+                >Industries&nbsp;<i class="fa-solid fa-caret-down"></i
+              ></a>
+              <input type="checkbox" id="showDrop3" />
+              <label for="showDrop3" class="mobile-item"
+                >Industries&nbsp;<i class="fa-solid fa-caret-down"></i
+              ></label>
+              <div class="mega-box drop-menu3">
+                <div class="content">
+                  <div class="row">
+                    <img
+                      src="https://fadzrinmadu.github.io/hosted-assets/responsive-mega-menu-and-dropdown-menu-using-only-html-and-css/img.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="row">
+                    <header>Design Services</header>
+                    <ul class="mega-links">
+                      <li><a href="#">Graphics</a></li>
+                      <li><a href="#">Vectors</a></li>
+                      <li><a href="#">Business cards</a></li>
+                      <li><a href="#">Custom logo</a></li>
+                    </ul>
+                  </div>
+                  <div class="row">
+                    <header>Email Services</header>
+                    <ul class="mega-links">
+                      <li><a href="#">Personal Email</a></li>
+                      <li><a href="#">Business Email</a></li>
+                      <li><a href="#">Mobile Email</a></li>
+                      <li><a href="#">Web Marketing</a></li>
+                    </ul>
+                  </div>
+                  <div class="row">
+                    <header>Security services</header>
+                    <ul class="mega-links">
+                      <li><a href="#">Site Seal</a></li>
+                      <li><a href="#">VPS Hosting</a></li>
+                      <li><a href="#">Privacy Seal</a></li>
+                      <li><a href="#">Website design</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <!-- Expertise Technologies Product About Us Contact Us -->
+              <a href="#" class="desktop-item"
+                >Mega Menu&nbsp;<i class="fa-solid fa-caret-down"></i
+              ></a>
+              <input type="checkbox" id="showDrop4" />
+              <label for="showDrop4" class="mobile-item"
+                >Mega Menu&nbsp;<i class="fa-solid fa-caret-down"></i
+              ></label>
+              <div class="mega-box drop-menu4">
+                <div class="content">
+                  <div class="row">
+                    <img
+                      src="https://fadzrinmadu.github.io/hosted-assets/responsive-mega-menu-and-dropdown-menu-using-only-html-and-css/img.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="row">
+                    <header>Design Services</header>
+                    <ul class="mega-links">
+                      <li><a href="#">Graphics</a></li>
+                      <li><a href="#">Vectors</a></li>
+                      <li><a href="#">Business cards</a></li>
+                      <li><a href="#">Custom logo</a></li>
+                    </ul>
+                  </div>
+                  <div class="row">
+                    <header>Email Services</header>
+                    <ul class="mega-links">
+                      <li><a href="#">Personal Email</a></li>
+                      <li><a href="#">Business Email</a></li>
+                      <li><a href="#">Mobile Email</a></li>
+                      <li><a href="#">Web Marketing</a></li>
+                    </ul>
+                  </div>
+                  <div class="row">
+                    <header>Security services</header>
+                    <ul class="mega-links">
+                      <li><a href="#">Site Seal</a></li>
+                      <li><a href="#">VPS Hosting</a></li>
+                      <li><a href="#">Privacy Seal</a></li>
+                      <li><a href="#">Website design</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <a href="#" class="desktop-item"
+                >Mega Menu&nbsp;<i class="fa-solid fa-caret-down"></i
+              ></a>
+              <input type="checkbox" id="showDrop5" />
+              <label for="showDrop5" class="mobile-item"
+                >Mega Menu&nbsp;<i class="fa-solid fa-caret-down"></i
+              ></label>
+              <div class="mega-box drop-menu5">
+                <div class="content">
+                  <div class="row">
+                    <img
+                      src="https://fadzrinmadu.github.io/hosted-assets/responsive-mega-menu-and-dropdown-menu-using-only-html-and-css/img.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="row">
+                    <header>Design Services</header>
+                    <ul class="mega-links">
+                      <li><a href="#">Graphics</a></li>
+                      <li><a href="#">Vectors</a></li>
+                      <li><a href="#">Business cards</a></li>
+                      <li><a href="#">Custom logo</a></li>
+                    </ul>
+                  </div>
+                  <div class="row">
+                    <header>Email Services</header>
+                    <ul class="mega-links">
+                      <li><a href="#">Personal Email</a></li>
+                      <li><a href="#">Business Email</a></li>
+                      <li><a href="#">Mobile Email</a></li>
+                      <li><a href="#">Web Marketing</a></li>
+                    </ul>
+                  </div>
+                  <div class="row">
+                    <header>Security services</header>
+                    <ul class="mega-links">
+                      <li><a href="#">Site Seal</a></li>
+                      <li><a href="#">VPS Hosting</a></li>
+                      <li><a href="#">Privacy Seal</a></li>
+                      <li><a href="#">Website design</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li><a href="#">Feedback</a></li>
+          </ul>
+          <div class="ps-3">
+            <a
+              class="button-24 talk-btn"
+              id="hide-btn-mob-desktop"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+              ><span class="blink-hard"> Let's Talk</span></a
+            >
+          </div>
+          <label for="menu-btn" class="btn menu-btn"
+            ><i class="fa-solid fa-bars"></i
+          ></label>
+        </div>
+      </nav>
+      <!-- header -->
+
+      <!-- blog-details    -->
+
+      <!-- Main Content -->
+      <main class="container" style="margin-top: 100px">
+        <!-- Blog Header -->
+        <header class="blog-header">
+          <div class="container">
+            <h1 class="display-4">Welcome to My Blog details</h1>
+            <p class="lead">A place for thoughts, ideas, and inspiration.</p>
+          </div>
+        </header>
+        <div class="row" id="blog-cards">
+          <!-- Blog Posts -->
+          <div class="col-lg-8 mx-auto">
+            <!-- Blog Post Title -->
+            <h1 class="post-title">
+              The Future of Web Development: Trends to Watch in 2025
+            </h1>
+
+            <!-- Meta Information -->
+            <p class="meta-info">
+              By <strong>John Doe</strong> | March 11, 2025
+            </p>
+
+            <!-- Blog Post Content -->
+            <div class="post-content">
+              <img
+                src="img/review2.jfif"
+                alt="Blog Image"
+                width="100%"
+                height="300px"
+                class="img-fluid"
+              />
+
+              <p>
+                Web development is an ever-evolving field, with new trends and
+                technologies emerging every year. In 2025, we’re expecting to
+                see more advancements in areas like artificial intelligence,
+                progressive web apps, and Web 3.0. In this post, we’ll dive into
+                some of the trends that are likely to shape the future of web
+                development.
+              </p>
+
+              <h2>1. Artificial Intelligence and Automation</h2>
+              <p>
+                Artificial Intelligence (AI) has already begun transforming how
+                websites and applications are built. From chatbots to
+                recommendation engines, AI is becoming more integrated into the
+                user experience, allowing for more personalized and efficient
+                interactions.
+              </p>
+
+              <h2>2. Progressive Web Apps (PWAs)</h2>
+              <p>
+                Progressive Web Apps (PWAs) are web applications that use modern
+                web technologies to provide a native app-like experience.
+                They’re fast, reliable, and can work offline, making them a
+                popular choice for developers looking to create cross-platform
+                applications.
+              </p>
+
+              <img
+                src="img/review1.avif"
+                alt="PWA Illustration"
+                class="img-fluid"
+              />
+
+              <h2>3. The Rise of Web 3.0</h2>
+              <p>
+                Web 3.0 refers to the next generation of the internet, where
+                decentralization and blockchain technologies are key components.
+                With Web 3.0, users can have more control over their data, and
+                decentralized applications (dApps) are becoming more mainstream.
+              </p>
+
+              <p>
+                These are just a few of the trends to watch out for in 2025. The
+                world of web development is constantly evolving, and staying
+                ahead of the curve will help developers create more innovative
+                and impactful web experiences.
+              </p>
+            </div>
+
+            <!-- Comment Section -->
+            <div class="comment-section">
+              <h3>Leave a Comment</h3>
+              <div class="comment-box">
+                <form>
+                  <div class="mb-3">
+                    <label for="name" class="form-label">Name</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="name"
+                      placeholder="Enter your name"
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="email"
+                      placeholder="Enter your email"
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <label for="comment" class="form-label">Comment</label>
+                    <textarea
+                      class="form-control"
+                      id="comment"
+                      rows="5"
+                      placeholder="Write your comment"
+                    ></textarea>
+                  </div>
+                  <button type="submit" class="btn btn-submit text-light">
+                    Submit Comment
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+
+          <!-- Sidebar -->
+          <div class="col-md-4" id="blog-cards">
+            <div class="card mb-4">
+              <div class="card-header">Search</div>
+              <div class="card-body">
+                <form>
+                  <div class="input-group">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Search for..."
+                    />
+                    <button class="btn btn-outline-secondary" type="button">
+                      <i class="fas fa-search"></i>
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+
+            <div class="card mb-4">
+              <div class="card-header">Categories</div>
+              <div class="card-body">
+                <ul class="list-unstyled mb-0" id="blog-cate">
+                  <li><a href="#">Technology</a></li>
+                  <li><a href="#">Design</a></li>
+                  <li><a href="#">Culture</a></li>
+                  <li><a href="#">Business</a></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-header">About</div>
+              <div class="card-body">
+                <p>
+                  Etiam porta sem malesuada magna mollis euismod. Cras mattis
+                  consectetur purus sit amet fermentum.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <!-- blog-details    -->
+
+      <!-- footer  -->
+      <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4 footer-section">
+              <div class="footer-logo">CompanyName</div>
+              <p class="footer-about">
+                We are dedicated to providing the best service to our customers.
+                Our mission is to create innovative solutions that make a
+                difference in people's lives.
+              </p>
+              <div class="social-links">
+                <a href="#" class="social-icon"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+                <a href="#" class="social-icon"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+                <a href="#" class="social-icon"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+                <a href="#" class="social-icon"
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
+              </div>
+            </div>
+
+            <div class="col-lg-2 col-md-6 footer-section">
+              <h5>Quick Links</h5>
+              <ul class="footer-links">
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Careers</a></li>
+              </ul>
+            </div>
+
+            <div class="col-lg-2 col-md-6 footer-section">
+              <h5>Support</h5>
+              <ul class="footer-links">
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Help Center</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+                <li><a href="#">Contact Support</a></li>
+              </ul>
+            </div>
+
+            <div class="col-lg-4 footer-section">
+              <h5>Newsletter</h5>
+              <p class="footer-about">
+                Subscribe to our newsletter for updates, news, and exclusive
+                offers.
+              </p>
+              <div class="footer-newsletter">
+                <input type="email" placeholder="Enter your email" />
+                <button class="newsletter-btn">
+                  <i class="fas fa-paper-plane"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="footer-bottom">
+            <ul class="footer-bottom-links">
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms of Service</a></li>
+              <li><a href="#">Cookie Policy</a></li>
+            </ul>
+            <p>© 2025 CompanyName. All rights reserved.</p>
+          </div>
+        </div>
+      </footer>
+      <!-- footer  -->
+    </main>
+  </body>
+  <script src="https://md-aqil.github.io/images/swiper.min.js"></script>
+  <script>
+    var galleryThumbs = new Swiper(".gallery-thumbs", {
+      effect: "coverflow",
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: "2",
+      coverflowEffect: {
+        rotate: 50,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows: true,
+      },
+
+      coverflowEffect: {
+        rotate: 0,
+        stretch: 0,
+        depth: 50,
+        modifier: 6,
+        slideShadows: false,
+      },
+    });
+
+    var galleryTop = new Swiper(".swiper-container.testimonial", {
+      speed: 400,
+      spaceBetween: 50,
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+      direction: "vertical",
+      pagination: {
+        clickable: true,
+        el: ".swiper-pagination",
+        type: "bullets",
+      },
+      thumbs: {
+        swiper: galleryThumbs,
+      },
+    });
+  </script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"
+  ></script>
+
+  <!-- <script src="/satpu.js"></script> -->
+  <script>
+    const burger = document.getElementById("burger");
+    const menu = document.getElementById("menu");
+
+    burger.addEventListener("click", () => {
+      menu.classList.toggle("active");
+    });
+  </script>
+</html>
+
+<!-- chnage in state   -->
+<!-- BAAS (Backend as a service) -->
