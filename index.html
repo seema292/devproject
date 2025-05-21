@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nubien - Next-Gen AI Studio</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <style>
+        body {
+            background-color: #000000;
+            color: #ffffff;
+            font-family: 'Inter', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+        
+        .navbar {
+            padding: 1.5rem 6rem;
+            background-color: rgba(0, 0, 0, 0.9);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        
+        .navbar-brand {
+            display: flex;
+            align-items: center;
+        }
+        
+        .logo-icon {
+            width: 32px;
+            height: 32px;
+            border-radius: 8px;
+            background-color: #8257E6;
+            margin-right: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .nav-link {
+            color: #ffffff;
+            margin: 0 1rem;
+            font-weight: 500;
+            opacity: 0.7;
+            transition: opacity 0.3s;
+        }
+        
+        .nav-link:hover, .nav-link.active {
+            color: #ffffff;
+            opacity: 1;
+        }
+        
+        .cta-button {
+            background-color: #8257E6;
+            color: white;
+            border-radius: 50px;
+            padding: 10px 24px;
+            font-weight: 600;
+            border: none;
+            transition: all 0.3s;
+        }
+        
+        .cta-button:hover {
+            background-color: #9666ff;
+            transform: translateY(-2px);
+        }
+        
+        .hero-section {
+            padding: 3rem 0;
+            min-height: 80vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            position: relative;
+        }
+        
+        .badge-2025 {
+            background-color: #8257E6;
+            color: white;
+            font-size: 14px;
+            padding: 6px 15px;
+            border-radius: 50px;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+        }
+        
+        .hero-title {
+            font-size: 4.2rem;
+            font-weight: 700;
+            line-height: 1.2;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        .hero-subtitle {
+            font-size: 1.1rem;
+            margin: 2rem auto;
+            opacity: 0.8;
+            max-width: 700px;
+        }
+        
+        .hero-buttons {
+            margin-top: 2rem;
+            display: flex;
+            gap: 1rem;
+        }
+        
+        .secondary-button {
+            background-color: rgba(255, 255, 255, 0.1);
+            color: white;
+            border-radius: 50px;
+            padding: 10px 24px;
+            font-weight: 600;
+            border: none;
+            transition: all 0.3s;
+        }
+        
+        .secondary-button:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+        
+        .client-logos {
+            margin-top: 4rem;
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+            opacity: 0.4;
+        }
+        
+        .client-logo {
+            height: 30px;
+        }
+        
+        .glow {
+            position: absolute;
+            width: 100%;
+            height: 300px;
+            background: radial-gradient(ellipse at center, rgba(130, 87, 230, 0.3) 0%, rgba(0, 0, 0, 0) 70%);
+            bottom: -50px;
+            z-index: -1;
+        }
+
+        .framer-badge {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: white;
+            color: black;
+            padding: 6px 12px;
+            border-radius: 50px;
+            font-size: 12px;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <div class="logo-icon"></div>
+                <span class="fw-bold">Nubien</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">FAQ</a>
+                    </li>
+                </ul>
+                <button class="cta-button">Get In Touch</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section" style="margin-top: 80px;">
+        <div class="badge-2025">2025</div>
+        <div class="badge-2025">Next-Gen AI Studio</div>
+        <h1 class="hero-title">AI-Driven Success<br>Redefining the Future. •</h1>
+        <p class="hero-subtitle">Creating latest solutions that redefine innovation.<br>Stay ahead with AI-powered technology for the future.</p>
+        <div class="hero-buttons">
+            <button class="secondary-button">Connect With Us</button>
+            <button class="secondary-button">What is Nubien?</button>
+        </div>
+        <div class="client-logos">
+            <div class="client-logo">BOOO</div>
+            <div class="client-logo">LOGO IPSUM</div>
+            <div class="client-logo">IPSUM</div>
+        </div>
+        <div class="glow"></div>
+    </section>
+
+    <div class="framer-badge">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M4 0H12V4H8V8H4V0Z" fill="black"/>
+            <path d="M8 4H12V8H8V4Z" fill="black"/>
+            <path d="M8 8H12V12H8V8Z" fill="black"/>
+            <path d="M4 8H8V16H4V8Z" fill="black"/>
+        </svg>
+        Made in Framer
+    </div>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam similique ea placeat molestiae quia ullam possimus sint perferendis rem odio totam minima hic nihil, voluptatum facere esse, incidunt maxime, magnam magni? Facilis distinctio aut quasi, aliquid eos cumque doloremque, corporis doloribus provident ad esse nihil in ipsa voluptate sunt inventore, veritatis delectus quisquam nobis. Illum magnam aperiam, blanditiis, ex consequatur nobis consectetur doloribus ab suscipit, repellat libero doloremque maxime perspiciatis eaque voluptate quod quasi saepe deleniti dolore soluta iusto exercitationem enim! Nisi modi, assumenda dolorum quas repellat iste sequi consequuntur maxime omnis nemo possimus nobis laudantium rem asperiores similique expedita soluta voluptate sapiente vitae nam facere, enim placeat doloribus ut? Adipisci illum, dicta maxime ratione repellendus quasi voluptatibus, nobis consequatur provident aspernatur animi unde. Architecto eum id error rerum distinctio, iusto consectetur consequuntur inventore mollitia atque natus ipsa omnis minus quas fuga quia cum dolores aliquid. Commodi, vel. Ea excepturi dolor error harum asperiores nobis, quo debitis alias numquam illo fugiat optio dolores, ipsum dolorum tempore tempora amet. Deserunt, quidem delectus! Reiciendis inventore facere doloribus dicta minus, consequatur illo et totam consequuntur, corrupti nisi, voluptas repellendus molestiae iste veniam? Porro qui nobis dolorum, illo est adipisci cupiditate. Temporibus, sunt nostrum. Ducimus quaerat, placeat pariatur nihil porro debitis earum, praesentium, ex exercitationem amet minus sequi! Fugiat, laboriosam? Corrupti ut culpa porro aliquam facilis nulla labore magnam eius, tenetur minus molestias sint et perspiciatis dolore quaerat ipsa. Voluptatum libero unde fugit nostrum pariatur eos dignissimos rerum ex. Praesentium, sequi. Placeat voluptatem odio voluptatibus nesciunt ducimus! Harum cum ad recusandae repellat. Facere non, consequatur vitae reiciendis repellat repellendus? Veritatis tempora cumque sint assumenda, sit doloremque in velit dolores officia quos distinctio ea nemo accusamus iusto alias iure molestias est atque quaerat ipsam. Autem animi deserunt, similique blanditiis corporis distinctio in architecto nemo a illo, perferendis quibusdam consequatur. Saepe alias aliquam vel eum voluptas optio reiciendis commodi accusamus consequatur, accusantium nesciunt quam eaque nulla incidunt sed, minus qui, iusto quae expedita. Et fugit animi, doloremque eligendi sed, modi at voluptas ab voluptatem, illo deleniti expedita nulla officia hic similique nisi inventore obcaecati! Perspiciatis quasi nemo sed. Cum provident, autem commodi laudantium voluptatibus eveniet. Eum explicabo, suscipit quia eius minus dignissimos minima veritatis alias architecto similique facere officia dolorum ipsam qui ad recusandae ipsum. Earum voluptatibus pariatur quas error molestiae sit, odio facilis recusandae quod placeat quasi. Sapiente animi at necessitatibus dolore possimus. Officia nam suscipit nesciunt facilis? Consectetur at in et rerum qui voluptatibus veritatis odio quas quis quasi quaerat, rem cum maxime nostrum nam reprehenderit numquam, quod fuga aliquam, iste neque sunt accusantium itaque libero. Dicta facere vero atque sint pariatur saepe rem magni libero reprehenderit debitis inventore, aut nulla sapiente modi illo aspernatur, repellat quae, provident sed numquam quis ea porro. Aspernatur ea vitae, quas aliquid libero saepe sequi. Doloremque dolore velit ex quod provident eveniet quis laborum quos praesentium vel sint natus harum aliquam dolorem quae, nobis facilis earum in sit fugit veniam. Ullam aliquid tempore molestiae repellat repellendus necessitatibus eius. Assumenda suscipit at corrupti veritatis repellendus exercitationem ratione ab odit. Minima aperiam amet quam ducimus rem iste illum libero placeat quae incidunt adipisci officia, ullam esse ipsum tenetur, fugiat deserunt cum debitis iusto exercitationem. Aliquam sapiente vitae quis a, hic vel earum qui excepturi debitis tempora corrupti, dolor, necessitatibus ducimus? Harum porro recusandae non praesentium accusantium nam nostrum dolorum, ut labore temporibus officiis eaque, dolorem aperiam similique laborum incidunt? Facilis porro, quam repudiandae distinctio laborum eligendi assumenda deleniti odit eos voluptatem ducimus doloribus dicta. Porro reiciendis eius error delectus cum vero quod reprehenderit dolorum ducimus alias inventore dolor esse, distinctio quos cumque totam dolore impedit blanditiis vel. Quisquam tempora illum earum natus. Aspernatur reiciendis error maiores aperiam consequuntur. Corporis beatae magni itaque molestiae unde aliquid dolores adipisci sunt earum ex, porro voluptas assumenda tenetur maiores, non nostrum iure quisquam, sequi similique debitis sit? Esse non nostrum fugit sunt exercitationem porro officia nisi facilis veniam. Tempora, reprehenderit repudiandae! Officiis quas necessitatibus doloremque temporibus quod molestiae dignissimos mollitia laborum ipsum, sequi obcaecati aut at dolor libero? Dolores ipsa consectetur illum doloremque aperiam cum aliquam, iste nisi laudantium quod dolore? Odio sit aspernatur eos totam possimus cupiditate ipsam, explicabo enim accusamus ducimus! Doloremque harum aliquam facere ea ducimus a quam deserunt cupiditate alias. Et distinctio quisquam nobis doloremque inventore optio eveniet adipisci hic sequi eos odio libero, iste aspernatur ullam vero labore autem aperiam eaque aliquam magnam error quod, enim asperiores. Distinctio rerum suscipit totam unde eum adipisci porro reprehenderit incidunt. Nam id assumenda natus porro aliquid temporibus labore blanditiis quam sequi deserunt? Dolor, quibusdam impedit quos ratione architecto consequatur perferendis sed ullam asperiores facere officiis deleniti vero! Quaerat fugit minima veniam aperiam animi. Porro, dolore totam! Accusantium nulla nisi natus, deserunt numquam quasi? Pariatur neque praesentium possimus voluptate illo ullam officiis commodi, rem architecto et fugit sequi aliquid? Porro, recusandae. Beatae iusto consequatur corrupti deserunt dolorum perferendis, facilis in velit aperiam facere aliquam modi quaerat minus vitae exercitationem, veniam incidunt debitis? Dolor ut soluta eaque, officia iusto doloremque, aut eligendi doloribus sint inventore harum at fugit iste dolore asperiores, facilis ipsa atque! Quisquam nisi alias officia ipsa dolorem, excepturi, consectetur modi quia accusantium accusamus, reiciendis tempora voluptate molestiae obcaecati. Adipisci unde consequuntur vitae! Mollitia, consectetur vero obcaecati ea minima ad omnis veniam atque, est in sit, perspiciatis doloribus sapiente dolorum vel quas. Vero explicabo, vitae, qui laboriosam perferendis nobis non, ea voluptatem deleniti aperiam nemo hic. Asperiores cum placeat accusantium vero quos nostrum a magnam hic est rerum ipsam officiis voluptatum aperiam perferendis reiciendis quasi inventore, repudiandae quod illo laudantium facere suscipit quis. Quas reiciendis, praesentium ipsum deleniti molestias ut ea adipisci consequatur aliquid magni. Et commodi, ratione nemo iste tenetur expedita iure repellendus, id esse vero quibusdam modi voluptas perferendis! Quidem temporibus dolores reprehenderit nam doloribus quos nesciunt aliquid assumenda blanditiis debitis. Repudiandae dolores error blanditiis porro assumenda totam tempore voluptate. Iste, voluptatum iure nesciunt quod culpa nobis ducimus vel pariatur id dolor, iusto veritatis corrupti ad consequuntur provident ea dolorem.</p>
+    <!-- Bootstrap & jQuery Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Script para ocultar el navbar al hacer scroll -->
+    <script>
+        $(document).ready(function() {
+            let lastScrollTop = 0;
+            let navbar = $('.navbar');
+            let navbarHeight = navbar.outerHeight();
+            
+            // Añadir clase para transiciones suaves
+            navbar.css('transition', 'transform 0.3s ease-in-out');
+            
+            $(window).scroll(function() {
+                let currentScroll = $(this).scrollTop();
+                
+                // Si el scroll es hacia abajo y pasamos del altura del navbar
+                if (currentScroll > lastScrollTop && currentScroll > navbarHeight) {
+                    // Scroll hacia abajo - ocultar navbar
+                    navbar.css('transform', 'translateY(-10%)');
+                } else {
+                    // Scroll hacia arriba - mostrar navbar
+                    navbar.css('transform', 'translateY(0)');
+                }
+                
+                lastScrollTop = currentScroll;
+            });
+        });
+    </script>
+</body>
+</html>
